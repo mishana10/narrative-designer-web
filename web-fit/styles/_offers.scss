@@ -1,0 +1,68 @@
+.offer {
+    background-color: $black;
+    color: $white;
+    padding: 6rem calc((100vh - 1100px) / 2);
+    text-align: center;
+
+    & h1 {
+        margin-bottom: 1rem;
+        font-size: clamp(1.8rem, 5vw, 3rem);
+        padding: 0 1rem;
+    }
+
+    &-desc {
+        margin-bottom: 3rem;
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        padding: 1rem;
+    }
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    &-card {
+        padding: 2rem;
+        min-height: 450px;
+        width: 325px;
+        background-color: $white;
+        color: $black;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &-perks {
+        min-height: 150px;
+    }
+
+    &-card p {
+        margin-bottom: 1rem;
+    }
+
+    &-card h3 {
+        font-size: clamp(1rem, 5vw, 2rem);
+        margin-bottom: 2rem;
+    }
+}
+
+.icon-card {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $red;
+}
+
+@media screen and (max-width: 1100px) {
+    .offer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
